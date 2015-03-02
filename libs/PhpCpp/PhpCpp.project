@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Project Name="PhpCpp" InternalType="">
+  <Plugins>
+    <Plugin Name="CMakePlugin">
+      <![CDATA[[{
+  "name": "Debug",
+  "enabled": false,
+  "buildDirectory": "build",
+  "sourceDirectory": "$(ProjectPath)",
+  "generator": "",
+  "buildType": "",
+  "arguments": [],
+  "parentProject": ""
+ }, {
+  "name": "Release",
+  "enabled": false,
+  "buildDirectory": "build",
+  "sourceDirectory": "$(ProjectPath)",
+  "generator": "",
+  "buildType": "",
+  "arguments": [],
+  "parentProject": ""
+ }]]]>
+    </Plugin>
+    <Plugin Name="qmake">
+      <![CDATA[00020001N0005Debug0000000000000001N0007Release000000000000]]>
+    </Plugin>
+  </Plugins>
+  <VirtualDirectory Name="PHP-CPP">
+    <VirtualDirectory Name="common">
+      <File Name="PHP-CPP/common/streambuf.h"/>
+      <File Name="PHP-CPP/common/extensionbase.h"/>
+      <File Name="PHP-CPP/common/includes.h"/>
+      <File Name="PHP-CPP/common/modifiers.cpp"/>
+      <File Name="PHP-CPP/common/streambuf.cpp"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="include">
+      <File Name="PHP-CPP/include/globals.h"/>
+      <File Name="PHP-CPP/include/call.h"/>
+      <File Name="PHP-CPP/include/parameters.h"/>
+      <File Name="PHP-CPP/include/array.h"/>
+      <File Name="PHP-CPP/include/version.h"/>
+      <File Name="PHP-CPP/include/byref.h"/>
+      <File Name="PHP-CPP/include/byval.h"/>
+      <File Name="PHP-CPP/include/classtype.h"/>
+      <File Name="PHP-CPP/include/class.h"/>
+      <File Name="PHP-CPP/include/inivalue.h"/>
+      <File Name="PHP-CPP/include/iterator.h"/>
+      <File Name="PHP-CPP/include/arrayaccess.h"/>
+      <File Name="PHP-CPP/include/extension.h"/>
+      <File Name="PHP-CPP/include/type.h"/>
+      <File Name="PHP-CPP/include/classbase.h"/>
+      <File Name="PHP-CPP/include/script.h"/>
+      <File Name="PHP-CPP/include/exception.h"/>
+      <File Name="PHP-CPP/include/hiddenpointer.h"/>
+      <File Name="PHP-CPP/include/modifiers.h"/>
+      <File Name="PHP-CPP/include/fatalerror.h"/>
+      <File Name="PHP-CPP/include/traversable.h"/>
+      <File Name="PHP-CPP/include/valueiterator.h"/>
+      <File Name="PHP-CPP/include/serializable.h"/>
+      <File Name="PHP-CPP/include/constant.h"/>
+      <File Name="PHP-CPP/include/streams.h"/>
+      <File Name="PHP-CPP/include/value.h"/>
+      <File Name="PHP-CPP/include/global.h"/>
+      <File Name="PHP-CPP/include/hashparent.h"/>
+      <File Name="PHP-CPP/include/argument.h"/>
+      <File Name="PHP-CPP/include/noexcept.h"/>
+      <File Name="PHP-CPP/include/platform.h"/>
+      <File Name="PHP-CPP/include/countable.h"/>
+      <File Name="PHP-CPP/include/super.h"/>
+      <File Name="PHP-CPP/include/hashmember.h"/>
+      <File Name="PHP-CPP/include/interface.h"/>
+      <File Name="PHP-CPP/include/ini.h"/>
+      <File Name="PHP-CPP/include/object.h"/>
+      <File Name="PHP-CPP/include/namespace.h"/>
+      <File Name="PHP-CPP/include/file.h"/>
+      <File Name="PHP-CPP/include/function.h"/>
+      <File Name="PHP-CPP/include/base.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="zend">
+      <File Name="PHP-CPP/zend/notimplemented.h"/>
+      <File Name="PHP-CPP/zend/hashiterator.h"/>
+      <File Name="PHP-CPP/zend/ini.cpp"/>
+      <File Name="PHP-CPP/zend/extension.cpp"/>
+      <File Name="PHP-CPP/zend/module.h"/>
+      <File Name="PHP-CPP/zend/global.cpp"/>
+      <File Name="PHP-CPP/zend/exists.cpp"/>
+      <File Name="PHP-CPP/zend/file.cpp"/>
+      <File Name="PHP-CPP/zend/script.cpp"/>
+      <File Name="PHP-CPP/zend/floatmember.h"/>
+      <File Name="PHP-CPP/zend/init.h"/>
+      <File Name="PHP-CPP/zend/members.cpp"/>
+      <File Name="PHP-CPP/zend/iteratorimpl.h"/>
+      <File Name="PHP-CPP/zend/valueiteratorimpl.h"/>
+      <File Name="PHP-CPP/zend/valueiterator.cpp"/>
+      <File Name="PHP-CPP/zend/boolmember.h"/>
+      <File Name="PHP-CPP/zend/namespace.cpp"/>
+      <File Name="PHP-CPP/zend/constant.cpp"/>
+      <File Name="PHP-CPP/zend/origexception.h"/>
+      <File Name="PHP-CPP/zend/nullmember.h"/>
+      <File Name="PHP-CPP/zend/inivalue.cpp"/>
+      <File Name="PHP-CPP/zend/streams.cpp"/>
+      <File Name="PHP-CPP/zend/nativefunction.h"/>
+      <File Name="PHP-CPP/zend/method.h"/>
+      <File Name="PHP-CPP/zend/numericmember.h"/>
+      <File Name="PHP-CPP/zend/objectimpl.h"/>
+      <File Name="PHP-CPP/zend/property.h"/>
+      <File Name="PHP-CPP/zend/object.cpp"/>
+      <File Name="PHP-CPP/zend/invaliditerator.h"/>
+      <File Name="PHP-CPP/zend/delayedfree.h"/>
+      <File Name="PHP-CPP/zend/fatalerror.cpp"/>
+      <File Name="PHP-CPP/zend/function.cpp"/>
+      <File Name="PHP-CPP/zend/member.h"/>
+      <File Name="PHP-CPP/zend/constantfuncs.cpp"/>
+      <File Name="PHP-CPP/zend/parametersimpl.h"/>
+      <File Name="PHP-CPP/zend/callable.h"/>
+      <File Name="PHP-CPP/zend/arithmetic.h"/>
+      <File Name="PHP-CPP/zend/callable.cpp"/>
+      <File Name="PHP-CPP/zend/iteratorimpl.cpp"/>
+      <File Name="PHP-CPP/zend/traverseiterator.h"/>
+      <File Name="PHP-CPP/zend/symbol.h"/>
+      <File Name="PHP-CPP/zend/globals.cpp"/>
+      <File Name="PHP-CPP/zend/includes.h"/>
+      <File Name="PHP-CPP/zend/functor.h"/>
+      <File Name="PHP-CPP/zend/classbase.cpp"/>
+      <File Name="PHP-CPP/zend/base.cpp"/>
+      <File Name="PHP-CPP/zend/hashmember.cpp"/>
+      <File Name="PHP-CPP/zend/extensionpath.h"/>
+      <File Name="PHP-CPP/zend/value.cpp"/>
+      <File Name="PHP-CPP/zend/compileroptions.h"/>
+      <File Name="PHP-CPP/zend/executestate.h"/>
+      <File Name="PHP-CPP/zend/functor.cpp"/>
+      <File Name="PHP-CPP/zend/classimpl.cpp"/>
+      <File Name="PHP-CPP/zend/constantimpl.h"/>
+      <File Name="PHP-CPP/zend/classimpl.h"/>
+      <File Name="PHP-CPP/zend/streambuf.cpp"/>
+      <File Name="PHP-CPP/zend/super.cpp"/>
+      <File Name="PHP-CPP/zend/eval.cpp"/>
+      <File Name="PHP-CPP/zend/stringmember.h"/>
+      <File Name="PHP-CPP/zend/extensionimpl.h"/>
+      <File Name="PHP-CPP/zend/opcodes.h"/>
+      <File Name="PHP-CPP/zend/extensionimpl.cpp"/>
+    </VirtualDirectory>
+    <File Name="PHP-CPP/Makefile"/>
+    <File Name="PHP-CPP/phpcpp.h"/>
+  </VirtualDirectory>
+  <Description/>
+  <Dependencies/>
+  <Settings Type="Dynamic Library">
+    <GlobalSettings>
+      <Compiler Options="" C_Options="" Assembler="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="Debug" CompilerType="GCC ( 4.8 )" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g" C_Options="-g" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="" IntermediateDirectory="./Debug" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild>
+        <Command Enabled="yes">outputDir=../../../bin/Debug/</Command>
+        <Command Enabled="yes">mkdir -p $outputDir</Command>
+        <Command Enabled="yes">cp libphpcpp.* $outputDir</Command>
+      </PostBuild>
+      <CustomBuild Enabled="yes">
+        <RebuildCommand/>
+        <CleanCommand>make clean</CleanCommand>
+        <BuildCommand>make</BuildCommand>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory>$(WorkspacePath)/libs/PhpCpp/PHP-CPP</WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="GCC ( 4.8 )" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="" C_Options="" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="-O2" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="" IntermediateDirectory="./Release" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild>
+        <Command Enabled="yes">outputDir=../../../bin/Release/</Command>
+        <Command Enabled="yes">mkdir -p $outputDir</Command>
+        <Command Enabled="yes">cp libphpcpp.* $outputDir</Command>
+        <Command Enabled="yes"/>
+      </PostBuild>
+      <CustomBuild Enabled="yes">
+        <RebuildCommand/>
+        <CleanCommand>make clean</CleanCommand>
+        <BuildCommand>make</BuildCommand>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory>$(WorkspacePath)/libs/PhpCpp/PHP-CPP</WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+  </Settings>
+</CodeLite_Project>

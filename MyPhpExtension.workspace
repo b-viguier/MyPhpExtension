@@ -1,2 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CodeLite_Workspace Name="MyPhpExtension" Database="MyPhpExtension.tags"/>
+<CodeLite_Workspace Name="MyPhpExtension" Database="MyPhpExtension.tags">
+  <Project Name="PhpCpp" Path="libs/PhpCpp/PhpCpp.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Project Name="PhpCpp" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="PhpCpp" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
