@@ -1,2 +1,5 @@
 .codelite/
 bin/
+build/
+.build-debug/
+MyPhpExtension/MyPhpExtension.txt

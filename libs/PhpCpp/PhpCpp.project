@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Project Name="PhpCpp" InternalType="">
   <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00020001N0005Debug0000000000000001N0007Release000000000000]]>
+    </Plugin>
     <Plugin Name="CMakePlugin">
       <![CDATA[[{
   "name": "Debug",
@@ -21,9 +24,6 @@
   "arguments": [],
   "parentProject": ""
  }]]]>
-    </Plugin>
-    <Plugin Name="qmake">
-      <![CDATA[00020001N0005Debug0000000000000001N0007Release000000000000]]>
     </Plugin>
   </Plugins>
   <VirtualDirectory Name="PHP-CPP">
@@ -175,7 +175,7 @@
       <PostBuild>
         <Command Enabled="yes">outputDir=../../../bin/Debug/</Command>
         <Command Enabled="yes">mkdir -p $outputDir</Command>
-        <Command Enabled="yes">cp libphpcpp.* $outputDir</Command>
+        <Command Enabled="yes">cp libphpcpp.a $outputDir</Command>
       </PostBuild>
       <CustomBuild Enabled="yes">
         <RebuildCommand/>
