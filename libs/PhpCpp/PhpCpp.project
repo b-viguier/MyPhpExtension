@@ -6,24 +6,24 @@
     </Plugin>
     <Plugin Name="CMakePlugin">
       <![CDATA[[{
-  "name": "Debug",
-  "enabled": false,
-  "buildDirectory": "build",
-  "sourceDirectory": "$(ProjectPath)",
-  "generator": "",
-  "buildType": "",
-  "arguments": [],
-  "parentProject": ""
- }, {
-  "name": "Release",
-  "enabled": false,
-  "buildDirectory": "build",
-  "sourceDirectory": "$(ProjectPath)",
-  "generator": "",
-  "buildType": "",
-  "arguments": [],
-  "parentProject": ""
- }]]]>
+		"name":	"Debug",
+		"enabled":	false,
+		"buildDirectory":	"build",
+		"sourceDirectory":	"$(ProjectPath)",
+		"generator":	"",
+		"buildType":	"",
+		"arguments":	[],
+		"parentProject":	""
+	}, {
+		"name":	"Release",
+		"enabled":	false,
+		"buildDirectory":	"build",
+		"sourceDirectory":	"$(ProjectPath)",
+		"generator":	"",
+		"buildType":	"",
+		"arguments":	[],
+		"parentProject":	""
+	}]]]>
     </Plugin>
   </Plugins>
   <VirtualDirectory Name="PHP-CPP">
@@ -146,6 +146,10 @@
   </VirtualDirectory>
   <Description/>
   <Dependencies/>
+  <VirtualDirectory Name="Local">
+    <File Name="Makefile"/>
+  </VirtualDirectory>
+  <Dependencies Name="Debug"/>
   <Settings Type="Dynamic Library">
     <GlobalSettings>
       <Compiler Options="" C_Options="" Assembler="">
@@ -156,8 +160,8 @@
       </Linker>
       <ResourceCompiler Options=""/>
     </GlobalSettings>
-    <Configuration Name="Debug" CompilerType="GCC ( 4.8 )" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
-      <Compiler Options="-g" C_Options="-g" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+    <Configuration Name="Debug" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g" C_Options="-g" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" UseDifferentPCHFlags="no" PCHFlags="">
         <IncludePath Value="."/>
       </Compiler>
       <Linker Options="" Required="yes"/>
@@ -166,16 +170,15 @@
       <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
         <![CDATA[]]>
       </Environment>
-      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
         <DebuggerSearchPaths/>
         <PostConnectCommands/>
         <StartupCommands/>
       </Debugger>
       <PreBuild/>
       <PostBuild>
-        <Command Enabled="yes">outputDir=../../../bin/Debug/</Command>
-        <Command Enabled="yes">mkdir -p $outputDir</Command>
-        <Command Enabled="yes">cp libphpcpp.a $outputDir</Command>
+        <Command Enabled="yes">mkdir -p bin/Debug/</Command>
+        <Command Enabled="yes">cp libs/PhpCpp/build/libphpcpp.a bin/Debug/</Command>
       </PostBuild>
       <CustomBuild Enabled="yes">
         <RebuildCommand/>
@@ -185,7 +188,7 @@
         <SingleFileCommand/>
         <MakefileGenerationCommand/>
         <ThirdPartyToolName>None</ThirdPartyToolName>
-        <WorkingDirectory>$(WorkspacePath)/libs/PhpCpp/PHP-CPP</WorkingDirectory>
+        <WorkingDirectory>$(WorkspacePath)/libs/PhpCpp</WorkingDirectory>
       </CustomBuild>
       <AdditionalRules>
         <CustomPostBuild/>
@@ -198,8 +201,8 @@
         <SearchPaths/>
       </Completion>
     </Configuration>
-    <Configuration Name="Release" CompilerType="GCC ( 4.8 )" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
-      <Compiler Options="" C_Options="" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+    <Configuration Name="Release" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="" C_Options="" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" UseDifferentPCHFlags="no" PCHFlags="">
         <IncludePath Value="."/>
       </Compiler>
       <Linker Options="-O2" Required="yes"/>
@@ -208,16 +211,15 @@
       <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
         <![CDATA[]]>
       </Environment>
-      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
         <DebuggerSearchPaths/>
         <PostConnectCommands/>
         <StartupCommands/>
       </Debugger>
       <PreBuild/>
       <PostBuild>
-        <Command Enabled="yes">outputDir=../../../bin/Release/</Command>
-        <Command Enabled="yes">mkdir -p $outputDir</Command>
-        <Command Enabled="yes">cp libphpcpp.* $outputDir</Command>
+        <Command Enabled="yes">mkdir -p bin/Release/</Command>
+        <Command Enabled="yes">cp libs/PhpCpp/build/libphpcpp.a bin/Release/</Command>
         <Command Enabled="yes"/>
       </PostBuild>
       <CustomBuild Enabled="yes">
@@ -228,7 +230,7 @@
         <SingleFileCommand/>
         <MakefileGenerationCommand/>
         <ThirdPartyToolName>None</ThirdPartyToolName>
-        <WorkingDirectory>$(WorkspacePath)/libs/PhpCpp/PHP-CPP</WorkingDirectory>
+        <WorkingDirectory>$(WorkspacePath)/libs/PhpCpp</WorkingDirectory>
       </CustomBuild>
       <AdditionalRules>
         <CustomPostBuild/>
